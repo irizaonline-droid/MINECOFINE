@@ -1,0 +1,38 @@
+{
+  "dataset_mode": "SIMULATED DEMO DATA",
+  "generated_at_utc": "2026-09-29T20:16:07.458271+00:00",
+  "scoring_date": "2026-09-29",
+  "selected_model": "Random forest",
+  "selected_threshold": 0.32999999999999996,
+  "holdout_strategy": "Time-based: snapshots from 2026-03-31 onward",
+  "metrics": [
+    {
+      "model": "Weighted rules",
+      "recall": 0.45714285714285713,
+      "precision": 0.22456140350877193,
+      "pr_auc": 0.22740083408517853,
+      "alert_rate": 0.31666666666666665,
+      "threshold": 0.35
+    },
+    {
+      "model": "Logistic regression",
+      "recall": 0.8,
+      "precision": 0.18543046357615894,
+      "pr_auc": 0.26761445415211815,
+      "alert_rate": 0.6711111111111111,
+      "threshold": 0.41000000000000003
+    },
+    {
+      "model": "Random forest",
+      "recall": 0.8,
+      "precision": 0.19858156028368795,
+      "pr_auc": 0.32189074298360937,
+      "alert_rate": 0.6266666666666667,
+      "threshold": 0.32999999999999996
+    }
+  ],
+  "training_rows": 3420,
+  "assets_scored": 180,
+  "positive_rate": 0.18040935672514619,
+  "data_quality_warnings": []
+}

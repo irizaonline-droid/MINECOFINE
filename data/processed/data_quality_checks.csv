@@ -1,0 +1,11 @@
+check,status,detail
+Asset schema,Pass,Required fields present
+Maintenance schema,Pass,Required fields present
+Inspection schema,Pass,Required fields present
+Unique asset IDs,Pass,0 duplicate asset IDs
+Maintenance linkage,Pass,100.0% linked to a valid asset ID
+Inspection linkage,Pass,100.0% linked to a valid asset ID
+Event codebook,Pass,Event types valid
+Plausibility,Pass,0 invalid usage values; 0 invalid costs
+Critical completeness,Pass,98.0% complete across critical asset fields
+Corrective label signal,Pass,34.8% of events are corrective or breakdown

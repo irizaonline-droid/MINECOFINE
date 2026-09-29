@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minecofin-predictive-maintenance"
+version = "1.0.0"
+description = "Explainable predictive-maintenance rapid MVP for public-sector vehicles and assets"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "streamlit>=1.41,<2",
+  "pandas>=2.2,<4",
+  "numpy>=2.0,<3",
+  "scikit-learn>=1.6,<2",
+  "plotly>=5.24,<7",
+  "joblib>=1.4,<2",
+  "openpyxl>=3.1,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.3,<10", "reportlab>=4.2,<5"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"
+
